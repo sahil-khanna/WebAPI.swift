@@ -8,10 +8,11 @@ Almost every app developed for a smartphone interacts with the backend REST APIs
  - **Reachability.swift**: This is picked from https://github.com/ashleymills/Reachability.swift. It is used to check if the device is connected to the internet
 
 ### WHAT'S INTERESTING?
-1. **Queue's**: Each API request can be categorised as high and low priority. A high priority request will be executed first and the low priority request will be executed later on. Below are a few examples
+1. **Queue**: API requests are queued and are executed serially one after the other
+2. **Priority's**: Each API request can be categorised as high and low priority. A high priority request will be executed first and the low priority request will be executed later on. Below are a few examples
 	- High priority: Book an order of the items in cart.
 	- Low priority: Dispatch the error logs to backend. These are not required to be sent immediately
-2. **Retry**: If a request fails because of internet connectivity, the request can be retried for the specified number of times
+3. **Retry**: If a request fails because of internet connectivity, the request can be retried for the specified number of times
 
 ### USAGE
 ```swift
