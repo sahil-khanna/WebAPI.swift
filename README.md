@@ -7,13 +7,13 @@ Almost every app developed for a smartphone interacts with the backend REST APIs
  - **WebAPIConstants.swift**: This file has the URL's and the Method's of the backend systems. It acommodates multiple URL's of different backend systems. Users will have to change the contents of this file as required
  - **Reachability.swift**: This is picked from https://github.com/ashleymills/Reachability.swift. It is used to check if the device is connected to the internet
 
-### What's Interesting?
+### WHAT'S INTERESTING?
 1. **Queue's**: Each API request can be categorised as high and low priority. A high priority request will be executed first and the low priority request will be executed later on. Below are a few examples
 	- High priority: Book an order of the items in cart.
 	- Low priority: Dispatch the error logs to backend. These are not required to be sent immediately
 2. **Retry**: If a request fails because of internet connectivity, the request can be retried for the specified number of times
 
-### Usage
+### USAGE
 ```swift
 var payload = WebAPIPayload();
 payload.apiMethod = .WEATHER;
