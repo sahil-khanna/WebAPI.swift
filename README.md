@@ -14,6 +14,9 @@ Almost every app developed for a smartphone interacts with the backend REST APIs
 	- Low priority: Dispatch the error logs to backend. These are not required to be sent immediately
 3. **Retry**: If a request fails because of internet connectivity, the request can be retried for the specified number of times
 
+### WHERE TO CHANGE?
+The users of this code will mostly have to add methods and URLs in **WebAPIConstants.swift**. The other files will never have to be changed
+
 ### USAGE
 ```swift
 var payload = WebAPIPayload();
