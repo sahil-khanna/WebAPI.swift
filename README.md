@@ -1,5 +1,5 @@
 ### INTRODUCTION
-Almost every app developed for a smartphone interacts with the backend REST APIs. There are several ways to communicate with the APIs. This repository demonstrates an elegant way to communicate with the backend APIs. The code can be used as a reference for other languages (Android, Java, .Net, etc.) as well
+Almost every app developed for a smartphone interacts with the backend REST APIs. There are several ways to communicate with the APIs. This repository demonstrates an elegant way to communicate with the backend APIs. ***The code can be used as a reference for other languages (Android, Java, .Net, etc.) as well***
 
 ### SOURCE CODE
 
