@@ -13,7 +13,7 @@ import Foundation
  */
 public enum WebAPIMethod: String {
     case WEATHER = "weather";
-    case ACCOUNT = "account";
+    case POST = "posts";
 }
 
 /*
@@ -21,5 +21,5 @@ public enum WebAPIMethod: String {
  */
 public enum WebAPIURL: String {
     case URL1 = "https://api.openweathermap.org/data/2.5";
-    case URL2 = "http://www.apple.com";
+    case URL2 = "https://jsonplaceholder.typicode.com/";
 }
