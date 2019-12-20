@@ -46,3 +46,5 @@ payload2.callback = { (response) in
 WebAPI.shared.push(apiPayload: payload1);
 WebAPI.shared.push(apiPayload: payload2);
 ```
+
+The details of the code is available on [Medium.com](https://medium.com/@sahil__khanna/abstraction-writing-code-for-others-41a956ad9532)
