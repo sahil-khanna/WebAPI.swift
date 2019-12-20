@@ -19,19 +19,30 @@ The users of this code will mostly have to add methods and URLs in **WebAPIConst
 
 ### USAGE
 ```swift
-var payload = WebAPIPayload();
-payload.apiMethod = .WEATHER;
-payload.timeoutInSec = 10;
-payload.httpMethod = .GET;
-payload.priority = .HIGH;
-payload.retryCount = 3;
-payload.data = ["lon": "139", "lat": "35"];
-payload.url = .URL1;
-payload.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData;
-payload.headers = ["header1": "value1", "header2": "value2"];
-payload.callback = { (response) in
+var payload1 = WebAPIPayload();
+payload1.apiMethod = .POST;
+payload1.httpMethod = .POST;
+payload1.priority = .HIGH;
+payload1.data = ["id": 1, "title": "Hello", "body": "World", "userId": 1];
+payload1.url = .URL2;
+payload1.callback = { (response) in
     print(response.description);
 };
 
-WebAPI.shared.push(apiPayload: payload);
+var payload2 = WebAPIPayload();
+payload2.apiMethod = .WEATHER;
+payload2.timeoutInSec = 10;
+payload2.httpMethod = .GET;
+payload2.priority = .LOW;
+payload2.retryCount = 3;
+payload2.data = ["lon": "139", "lat": "35"];
+payload2.url = .URL1;
+payload2.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData;
+payload2.headers = nil;
+payload2.callback = { (response) in
+    print(response.description);
+};
+
+WebAPI.shared.push(apiPayload: payload1);
+WebAPI.shared.push(apiPayload: payload2);
 ```
