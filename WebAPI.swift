@@ -172,6 +172,8 @@ public class WebAPI {
                         "message": "Internet connection appears to be offline"
                     ]
                 ]);
+             
+                self.clearState();
             }
             
             return;
